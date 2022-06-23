@@ -1,0 +1,18 @@
+introduction of npm
+getting started with npm
+npm help
+package json npm config set init-author-name,npm config get init-author-name
+package json default
+installing local package npm install package name --save
+uninstalling local package npm uninstall package name
+installing global package npm install package name -g
+uninstalling global package npm uninstall package name -g
+listing packages - local and global
+introduction to nodejs
+installing noed js
+npm scripting
+shortcuts eg:npm install moment - npm i moment
+npm prune
+installing package json
+updating pacakges
+npm versioning
