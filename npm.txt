@@ -1,0 +1,81 @@
+-> Modules => A part of reusable code that can be stored in it.
+
+-> Package => Collection of one or more reusable codes along with package.json.
+
+-> The reusable code that can be stored in npm registry to reuse that code by others also.
+
+-> If there is updates happened in that code the other devolopers who are using that code they also get the notifications to check the updates.
+
+Package Manager ->
+npm is the standard package manager for node.js.
+
+-> npm help => it is used to show the usage of different types of commands that are in npm.
+
+representation => npm <command>
+
+-> npm help-search update => it will search for update in npm documentation.
+
+-> Package.json => There are 2 types of usages
+
+1. Manage dependencies
+   -> Express and its version
+   -> We can create our own dependencies.
+
+2. Scripts:
+   -> Initial build
+
+-> While doing the initialisation of npm we have to give --yes in it. It is used to give answer to every question as yes.
+
+-> while initialising we can give the dependencies by our own also like.
+
+npm config set init-author-name "Ranganadh"
+npm set init - license "Own"
+npm init --yes
+
+-> we can install the packages => npm install <package-name>.
+
+-> if we do npm install it will install all the node modules that we are having in npm.
+
+-> Uninstalling packages: npm uninstall package name. => it will no remove the entry.
+-> To remove the entry we will use npm uninstall package name --save. => this will removes the entry also.
+
+-> Some packages we have to install/uninstall from command prompt only => those are called global packages.
+
+-> In command we will write like this npm install package name -g => this represents that the package is installed globally.
+
+-> npm list is used to list out all the local and global package in package.json.
+
+->Depth is used to know the which are depending on others like => npm list --depth <number>
+
+npm list --global true --depth <number> => we will get the globally installed packages.
+
+-> versioning: ex: "lodash": "^4.16.1" => "Major version num. Minor version num. Patch version num"
+
+-> Sometimes we have to install a particular version only. That time we have to give the version along with the installation.
+
+-> npm install lodash@3.3.0 --save
+
+-> If we use ^ symbol it will reamins major version num as same. If we use ~ symbol it will remains major and minor version as same. If we want any specific version they is no symbol to denote.
+
+-> We can update the packages to latest version. => npm update <package-name> --save.
+
+-> To update total npm => npm install npm@latest -g
+
+-> npm prune => it is used to remove extraneous packages.
+
+Shortcuts:
+
+-> instead of using npm init --yes , we can use npm init -y
+
+-> instead of using npm install <package-name> , we can use npm i <package-name>
+
+-> instead of using npm i <package-name> --save , we can use npm i <package-name> -S
+
+-> instead of using npm install <package-name> --save-dev, we can use npm i <package-name> -D
+
+-> script is used to run the program like:
+
+    -> Create a file and add something in that file.
+    -> In json file change in scripts from test to start and save it.
+    -> And run the npm using npm start.
+    -> Then we will get the whatever content in that file into the command prompt.
