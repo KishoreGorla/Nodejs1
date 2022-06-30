@@ -1,72 +1,3 @@
-// var express = require('express');
-
-// var app = express();
-
-// app.set('view engine', 'ejs');
-
-// app.get('/', function(req,res){
-//     console.log('request was made: ' + req.url);
-//     //res.send('This is the homepage.');
-//     res.render('index');
-// });
-
-// app.get('/contact', function(req,res){
-//     console.log('request was made: ' + req.url);
-//     //res.send('This is the contactpage.');
-//     res.render('contact');
-// });
-
-// app.get('/profile/:name', function(req,res){
-//     var data = {age: 29, job: 'software', hobbies:['eating', 'fighting', 'fishing']};
-//     res.render('profile', {person: req.params.name, data: data});
-// });
-// app.listen(3000);
-
-
-// var express = require('express');
-
-// var app = express();
-
-// app.set('view engine', 'ejs');
-
-// app.get('/', function(req,res){
-//     console.log('request was made: ' + req.url);
-//     //res.send('This is the homepage.');
-//     res.render('index');
-// });
-
-// app.get('/contact', function(req,res){
-//     console.log('request was made: ' + req.url);
-//     //res.send('This is the contactpage.');
-//     res.render('contact');
-// });
-
-// app.get('/profile/:name', function(req,res){
-//     var data = {age: 29, job: 'software', hobbies:['eating', 'fighting', 'fishing']};
-//     res.render('profile', {person: req.params.name, data: data});
-// });
-// app.listen(3000);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 var buffer1 = Buffer.alloc(100);
 var buffer2 = new Buffer('GFG');
 var buffer3 = Buffer.from([1, 2, 3, 4]);
@@ -102,5 +33,3 @@ var bufferOne = new Buffer('Happy Learning ');
 var bufferTwo = new Buffer('With GFG');
 var bufferThree = Buffer.concat([bufferOne, bufferTwo]);
 console.log(bufferThree.toString());
-
-
