@@ -1,0 +1,51 @@
+
+
+Events in Node.js
+
+Events are one of the key concepts in Node.js and sometimes Node.js is referred to as an Event-driven framework.
+
+Basically, an event is something that happens. For example, if a connection is established to a database, then the database connection event is triggered. Event driven programming is to create functions that will be triggered when specific events are triggered.
+
+Let’s look at a basic example of defining an event in Node.js.
+
+We are going to create an event called ‘data_received’. When this event is triggered, the text “data received” will be sent to the console.
+
+
+
+Emitting Events
+
+When defining events, there are different methods for events which can be invoked. This topic focuses on looking at each one of them in detail.
+One time event handlers
+
+Sometimes you may be interested in reacting to an event only the first time it occurs. In these situations, you can use the once() method.
+
+Let’s see how we can make use of the once method for event handlers.
+
+
+Inspecting Event Listeners
+
+At any point in its lifetime, an event emitter can have zero or more listeners attached to it. The listeners for each event type can be inspected in several ways.
+
+If you are interested in only determining the number of attached listeners, then look no further than the EventEmitter.listenerCount() method.
+
+(Note: Listeners are important because the main program should know if listeners are being added on the fly to an event, else the program will malfunction because additional listeners will get called.)
+
+
+
+Events in Node.js
+Every action on a computer is an event. Like when a connection is made or a file is opened.
+Objects in Node.js can fire events, like the readStream object fires events when opening and closing a file:
+
+
+
+Events Module
+Node.js has a built-in module, called "Events", where you can create-, fire-, and listen for- your own events.
+To include the built-in Events module use the require() method. In addition, all event properties and methods are an instance of an EventEmitter object. To be able to access these properties and methods, create an EventEmitter object:
+
+
+
+The EventEmitter Object
+You can assign event handlers to your own events with the EventEmitter object.
+In the example below we have created a function that will be executed when a "scream" event is fired.
+To fire an event, use the emit() method.
+
