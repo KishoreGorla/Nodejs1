@@ -1,0 +1,23 @@
+Pipes can be used to connect multiple streams together. 
+One of the most common example is to pipe the read and write stream
+ together for the transfer of data from one file to the other. 
+Node.js is often also tagged as an event driven framework, 
+and it's very easy to define events in Node.js. 
+Functions can be defined which respond to these events.
+
+Pipes()
+The readable.pipe() method in a Readable Stream is used to attach a Writable stream
+to the readable stream so that it consequently switches into flowing mode and then
+pushes all the data that it has to the attached Writable.
+
+
+Pipes in Node.js
+Within Node applications, streams can be piped together using the pipe() method, which takes two arguments:
+
+A Required writable stream that acts as the destination for the data and
+An optional object used to pass in options.
+A typical example of using pipes, if you want to transfer data from one file to the other.
+
+ we can transfer data from one file to the other using pipes.
+
+ Create a file called datainput.txt which has the below data. Let assume this file is stored on the D drive of our local machine.
